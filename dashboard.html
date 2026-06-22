@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | NileVoice AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div>
+          <a href="index.html" class="logo sidebar-logo">
+            <span class="logo-icon">N</span>
+            NileVoice AI
+          </a>
+        </div>
+        <nav>
+          <a class="active" href="#"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+          <a href="#"><i class="fa-solid fa-language"></i> Submit Translation</a>
+          <a href="#"><i class="fa-solid fa-list-check"></i> My Contributions</a>
+          <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+          <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </nav>
+      </aside>
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <h2>Translator Dashboard</h2>
+          <button class="btn btn-primary">+ New Submission</button>
+        </header>
+        <section class="dashboard-cards">
+          <div class="dashboard-card">
+            <small>Submitted Words</small>
+            <h3>1,240</h3>
+          </div>
+          <div class="dashboard-card">
+            <small>Submitted Phrases</small>
+            <h3>320</h3>
+          </div>
+          <div class="dashboard-card">
+            <small>Submitted Sentences</small>
+            <h3>180</h3>
+          </div>
+          <div class="dashboard-card">
+            <small>Pending Reviews</small>
+            <h3>24</h3>
+          </div>
+        </section>
+        <section class="dashboard-panel">
+          <h3>Translation Submission</h3>
+          <form class="submission-form">
+            <div class="form-row">
+              <div class="field-group">
+                <label>Source Language</label>
+                <select>
+                  <option>English</option>
+                  <option>Dinka</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label>Target Language</label>
+                <select>
+                  <option>Dinka</option>
+                  <option>English</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Original Text</label>
+              <textarea rows="3" placeholder="Original text"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Translated Text</label>
+              <textarea rows="3" placeholder="Translated text"></textarea>
+            </div>
+            <div class="field-group">
+              <label>Notes</label>
+              <textarea rows="2" placeholder="Optional notes"></textarea>
+            </div>
+            <button class="btn btn-primary">Submit Translation</button>
+          </form>
+        </section>
+        <section class="dashboard-panel">
+          <h3>Recent Contributions</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Original</th>
+                  <th>Translated</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Hello</td>
+                  <td>Abuk</td>
+                  <td><span class="status approved">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>Thank you</td>
+                  <td>Yie</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Good morning</td>
+                  <td>Dek</td>
+                  <td><span class="status approved">Approved</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

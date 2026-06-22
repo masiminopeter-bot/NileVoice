@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NileVoice AI helps people communicate across South Sudan's languages with modern translation tools."
+    />
+    <title>NileVoice AI | Giving Every Language a Voice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">N</span>
+          NileVoice AI
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="support.html" class="nav-link">Support Us</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="login.html" class="btn btn-secondary btn-small">Login</a>
+          <a href="register.html" class="btn btn-primary btn-small">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content scroll-reveal">
+          <div>
+            <span class="eyebrow">AI Translation Platform</span>
+            <h1>NILEVOICE AI</h1>
+            <p class="hero-subtitle">Giving Every Language a Voice</p>
+            <p class="hero-description">
+              <b>Because No Language Should Be Left Behind</b>
+            </p>
+            <p class="hero-description">
+              South Sudan is home to some of Africa's richest linguistic diversity. Our languages carry our stories, cultures, traditions, identities, and generations of knowledge.
+            </p>
+            <p class="hero-description">
+              Yet many of these languages remain invisible in today's digital world.
+            </p>
+            <p class="hero-description">
+              Millions of people communicate daily in languages that are rarely supported by modern technology, making it harder to access information, connect across communities and preserve valuable cultural heritage.
+            </p>
+            <p class="hero-description">
+              NileVoice AI was founded to change that.
+            </p>
+            <p class="hero-description">
+              We are building a translation platform dedicated to South Sudanese languages—helping people understand one another, preserve their linguistic heritage and create a future where language is no longer a barrier to communication.
+            </p>
+            <p class="hero-description secondary-text">
+              We build tools for translation, learning and connection so every language can thrive in the digital age.
+            </p>
+            <div class="hero-actions">
+              <a href="#translation-panel" class="btn btn-primary btn-large scroll-link">Start Translating</a>
+              <a href="#about-preview" class="btn btn-outline btn-large scroll-link">Learn More</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>10+</strong>
+                <span>Languages</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Community Support</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Inclusive Access</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card glass-card scroll-reveal">
+              <div class="hero-card-top">
+                <span>Live Translation</span>
+                <span class="status-pill">Online</span>
+              </div>
+              <div class="hero-card-body">
+                <div>
+                  <small>English</small>
+                  <p>Welcome to South Sudan</p>
+                </div>
+                <div>
+                  <small>Juba Arabic</small>
+                  <p>Marhab le Junub Sudan</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="translation-panel section" id="translation-panel">
+        <div class="container">
+          <div class="translation-card glass-card scroll-reveal">
+            <div class="translation-header">
+              <div>
+                <span class="eyebrow">Translation Tool</span>
+                <h2>Translate With Confidence</h2>
+              </div>
+              <button class="btn btn-secondary btn-small" id="sampleBtn">Try Sample</button>
+            </div>
+            <div class="translator-grid">
+              <div class="language-box">
+                <label for="sourceLanguage">From</label>
+                <select id="sourceLanguage">
+                  <option>English</option>
+                  <option>Juba Arabic</option>
+                  <option>Dinka</option>
+                  <option>Nuer</option>
+                  <option>Bari</option>
+                  <option>Zande</option>
+                  <option>Shilluk</option>
+                  <option>Toposa</option>
+                  <option>Acholi</option>
+                  <option>Murle</option>
+                </select>
+              </div>
+              <button class="swap-btn" id="swapBtn" aria-label="Swap languages">
+                <i class="fa-solid fa-right-left"></i>
+              </button>
+              <div class="language-box">
+                <label for="targetLanguage">To</label>
+                <select id="targetLanguage">
+                  <option>Dinka</option>
+                  <option>English</option>
+                  <option>Juba Arabic</option>
+                  <option>Nuer</option>
+                  <option>Bari</option>
+                  <option>Zande</option>
+                  <option>Shilluk</option>
+                  <option>Toposa</option>
+                  <option>Acholi</option>
+                  <option>Murle</option>
+                </select>
+              </div>
+            </div>
+            <div class="translator-text-grid">
+              <div class="text-panel">
+                <div class="panel-top">
+                  <span>Original Text</span>
+                  <span class="char-count" id="sourceCount">0/500</span>
+                </div>
+                <textarea id="sourceText" maxlength="500" placeholder="Type or paste text here..."></textarea>
+              </div>
+              <div class="text-panel result-panel">
+                <div class="panel-top">
+                  <span>Translation</span>
+                  <button class="icon-btn" id="copyBtn"><i class="fa-regular fa-copy"></i></button>
+                </div>
+                <textarea id="resultText" readonly placeholder="Your translation will appear here..."></textarea>
+              </div>
+            </div>
+            <div class="translation-actions">
+              <button class="btn btn-primary" id="translateBtn">Translate</button>
+              <button class="btn btn-secondary" id="clearBtn">Clear</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-preview">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Our Mission</span>
+            <h2>Our Current Focus</h2>
+          </div>
+          <div class="focus-grid scroll-reveal">
+            <div class="focus-card glass-card">
+              <p>
+                NileVoice AI is currently focused on building accurate translation tools for South Sudanese languages.
+              </p>
+              <p>
+                We are working with translators and language contributors to create a strong language database that will power future innovations.
+              </p>
+            </div>
+            <div class="focus-highlight">
+              <div class="highlight-pill">Language Data</div>
+              <div class="highlight-pill">Community Voices</div>
+              <div class="highlight-pill">AI Innovation</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap-section">
+        <div class="container">
+          <div class="section-head center">
+            <span class="eyebrow">Future Vision</span>
+            <h2>What We Are Building Next</h2>
+          </div>
+          <div class="roadmap-grid">
+            <div class="roadmap-card"><span>AI Language Assistant</span><small>Coming Soon</small></div>
+            <div class="roadmap-card"><span>Voice-to-Text</span><small>Coming Soon</small></div>
+            <div class="roadmap-card"><span>Text-to-Speech</span><small>Coming Soon</small></div>
+            <div class="roadmap-card"><span>Real-Time Voice Translation</span><small>Coming Soon</small></div>
+            <div class="roadmap-card"><span>Language Learning Platform</span><small>Coming Soon</small></div>
+            <div class="roadmap-card"><span>Mobile Applications</span><small>Coming Soon</small></div>
+            <div class="roadmap-card"><span>Language Preservation Systems</span><small>Coming Soon</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section why-section">
+        <div class="container scroll-reveal">
+          <div class="section-head center">
+            <span class="eyebrow">Why NileVoice AI</span>
+            <h2>Built for Inclusion and Innovation</h2>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-language"></i></div>
+              <h3>Language Translation</h3>
+              <p>Helping people communicate across language barriers.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-book-open"></i></div>
+              <h3>Language Preservation</h3>
+              <p>Protecting South Sudan's linguistic heritage.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+              <h3>Community Contributions</h3>
+              <p>Empowering native speakers to contribute translations.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+              <h3>Future AI Innovation</h3>
+              <p>Building the foundation for advanced language technologies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta-section">
+        <div class="container cta-card scroll-reveal">
+          <div>
+            <span class="eyebrow">Join the Movement</span>
+            <h2>Help Build South Sudan's Language Future</h2>
+            <p>
+              Join NileVoice AI as a translator and help preserve and digitize South Sudanese languages.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a href="dashboard.html" class="btn btn-primary">Become a Translator</a>
+            <a href="register.html" class="btn btn-outline light">Register Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo footer-logo">NileVoice AI</a>
+          <p>Giving Every Language a Voice</p>
+          <p><i class="fa-solid fa-location-dot"></i> South Sudan</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="support.html">Support Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="dashboard.html">Translator Portal</a></li>
+            <li><a href="#">Language Contributions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NileVoice AI. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
