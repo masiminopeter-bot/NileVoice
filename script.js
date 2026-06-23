@@ -251,7 +251,7 @@ if (swapBtn) {
 
 if (sampleBtn) {
   sampleBtn.addEventListener('click', () => {
-    sourceText.value = 'Welcome to South Sudan';
+    sourceText.value = 'Hello';
     sourceLang.value = 'English';
     targetLang.value = 'Dinka';
     updateCount();
