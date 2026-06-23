@@ -15,14 +15,14 @@ const languageMap = {
 // Demo translation data for the frontend-only translation experience.
 const sampleTranslations = {
   English: {
-    Dinka: 'Aŋɔk awɛr',
-    'Juba Arabic': 'أهلاً',
+    Dinka: 'Yin ca lor',
+    'Juba Arabic': 'Marhab',
     Nuer: 'Ayi',
-    Bari: 'Ayi'
+    Bari: 'Do awueyi'
   },
   Dinka: {
     English: 'Welcome',
-    'Juba Arabic': 'أهلاً'
+    'Juba Arabic': 'Marhab'
   }
 };
 
@@ -114,9 +114,9 @@ function getDummyTranslation(text, source, target) {
   const textLower = text.trim().toLowerCase();
   const base = sampleTranslations[source]?.[target];
   if (base) return base;
-  if (textLower.includes('hello')) return target === 'Dinka' ? 'Aŋɔk' : 'Hello';
-  if (textLower.includes('thank')) return target === 'Dinka' ? 'Aciɛr' : 'Thank you';
-  if (textLower.includes('welcome')) return target === 'Dinka' ? 'Aŋɔk' : 'Welcome';
+  if (textLower.includes('hello')) return target === 'Dinka' ? 'Yin ca muoth' : 'Hello';
+  if (textLower.includes('thank')) return target === 'Dinka' ? 'Yin ca liec' : 'Thank you';
+  if (textLower.includes('welcome')) return target === 'Dinka' ? 'Yin ca lor' : 'Welcome';
   return `${text.trim()} [translated to ${target}]`;
 }
 
