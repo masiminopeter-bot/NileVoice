@@ -1,11 +1,11 @@
-services:
+sservices:
   - type: web
     name: nilevoice-backend
     env: python
     plan: free
     region: oregon
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app.main:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    buildCommand: cd back && pip install -r requirements.txt
+    startCommand: cd back && gunicorn app.main:app --workers 2 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.0
